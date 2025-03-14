@@ -25,7 +25,7 @@ class AlarmClock{
     getCurrentFormattedTime(){
         const now = new Date()
         let hourse = now.getHours()
-        let minutes = now.getMinutes()
+        let minutes = now.getMinutes().toString().padStart(2, '0')
         return `${hourse}:${minutes}`
     }
 
